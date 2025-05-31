@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mohyusufz's Blog</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="css/theme.css" /> -->
+
+    <style>
+      body {
+        font-family: "Helvetica Neue", sans-serif;
+        background-color: #f8f9fa;
+      }
+      .blog-post {
+        margin-bottom: 3rem;
+      }
+      .blog-post img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .post-meta {
+        font-size: 0.9rem;
+        color: #6c757d;
+      }
+      .card-img-top {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+      .card-title {
+        font-size: 1.15rem;
+        line-height: 1.4;
+      }
+      .card-text {
+        font-size: 0.95rem;
+      }
+      .fw-medium {
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light border-bottom mb-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand fw-bold" href="#">mohyusufz's Blog</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <!-- Sidebar (Left) -->
+        <div class="col-md-4 mb-4">
+          <div class="position-sticky" style="top: 2rem">
+            <div class="card text-center shadow-sm border-0">
+              <img
+                src="https://gravatar.com/userimage/266927778/0a75042f33847191618e2f4db9f499bf.jpeg?size=256"
+                class="card-img-top rounded-circle mx-auto mt-4"
+                alt="Author"
+                style="width: 100px; height: 100px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold mb-1">mohyusufz</h5>
+                <p class="card-text small text-muted fst-italic mb-3">
+                  Backend developer focused on PostgreSQL performance and
+                  scalable system design. Passionate about clean architecture
+                  and efficient data access.
+                </p>
+                <!-- Social Buttons -->
+                <div class="d-flex justify-content-center gap-2">
+                  <a
+                    href="https://www.linkedin.com/in/yusuf-zamzami-4120481b4"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-primary"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://github.com/zamzami16"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-dark"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://medium.com/@mohyusufz"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-secondary"
+                  >
+                    <i class="fab fa-medium"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Medium Articles Container -->
+        <div class="col-md-8">
+          <div class="mb-4 pb-2 border-bottom">
+            <h3 class="fw-semibold">Medium Articles</h3>
+            <p class="text-muted small fst-italic mb-0">
+              Articles pulled from
+              <a
+                href="https://medium.com/@mohyusufz"
+                target="_blank"
+                class="text-decoration-underline"
+                >Medium</a
+              >, sharing thoughts on backend development, databases, and clean
+              architecture, and my curiosity.
+            </p>
+          </div>
+
+          <div id="medium-articles" class="row gx-4 gy-4"></div>
+
+          <!-- Pagination Container -->
+          <nav aria-label="Medium post pagination" class="mt-4">
+            <ul
+              class="pagination justify-content-center"
+              id="pagination-controls"
+            ></ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript to Fetch and Display Articles -->
+    <script src="js/medium.js"></script>
+  </body>
+</html>
